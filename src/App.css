@@ -28,11 +28,69 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home {
+  background-image: url('./images/IcelandTV.jpg');
+  background-color: #282c34;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.home-title {
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.home-subtitle {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.page-content {
+  background-color: #282c34;
+  min-height: 100vh;
+  padding-top: 100px;
+  color: white;
 }
