@@ -3,13 +3,13 @@ import React from 'react';
 function Photography() {
   return (
     <div className="page-content">
-      <h1>Photography</h1>
-      <p>Check out my photography work.</p>
+      <h1>Weekend Warrior Photographer</h1>
+      <p>The eye for detail goes beyond software. Check out some of my photography work.</p>
       
       <div className="photography-contents">
         <div className="photo-grid">
-            <img src={require('./images/FoxKit.png')} alt="Photography 1" />
-            <img src={require('./images/Church.png')} alt="Photography 2" />
+            <img src={require('./images/Church.png')} alt="Photography 1" />
+            <img src={require('./images/FoxKit.png')} alt="Photography 2" />
             <img src={require('./images/Heeley.png')} alt="Photography 3" />
             <img src={require('./images/Moose.jpg')} alt="Photography 4" />
             <img src={require('./images/Paget.jpg')} alt="Photography 5" />

@@ -20,25 +20,42 @@ function Home() {
     setSelectedImage(null);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <><div className='home'>
+    <>
+      <div className="sidebar">
+        <div className="sidebar-nav">
+          <button onClick={() => scrollToSection('home')} className="sidebar-btn">1</button>
+          <button onClick={() => scrollToSection('about')} className="sidebar-btn">2</button>
+          <button onClick={() => scrollToSection('projects')} className="sidebar-btn">3</button>
+          <button onClick={() => scrollToSection('photography')} className="sidebar-btn">4</button>
+        </div>
+      </div>
+
+      <div id="home" className='home'>
           <h1 className='home-title'>Matt <br /> Embury</h1>
           <p className='home-subtitle'>Software Developer <br /> Photographer <br /> Mountain Athlete</p>
       </div>
-      <div className='about'>
+      <div id="about" className='about'>
             <div className='about-content'>
               <img src={require('./images/Matt.jpg')} alt="Matt" />
               <div className="about-text">
                 <h1>About Me</h1>
-                <p>Software Developer by day, hobbist photographer and mountain athlete by night. I'm a full stack developer with a passion for building web applications and mobile apps.
+                <p>Software Developer by day, hobbyist photographer and mountain athlete by night. I'm a full stack developer with a passion for building web applications and mobile apps.
                     I've created this site to showcase some of my recent projects as I try to expand my skills and learn new technologies. You can also check out 
                      my <a href='https://github.com/emburymw'>Github portfoilio</a> to see how I've developed my projects directly! </p>
 
-                <p>On weekends you'll find me in the mountains trail running, back country skiing, or rock climbing. Probably with camera in hand.</p>
+                <p>On weekends you'll find me in the mountains trail running, backcountry skiing, or rock climbing. Probably with camera in hand.</p>
               </div>
             </div>
     </div>
-    <div className='projects'>
+    <div id="projects" className='projects'>
         <div className='tech'>
             <h1>Experience</h1>
 
@@ -47,7 +64,7 @@ function Home() {
             <h1>Projects</h1>
         </div>
     </div>
-    <div className='photography'>
+    <div id="photography" className='photography'>
         <div className='photography-contents'>
             <h1>Photography</h1>
           <div className="photo-grid">
@@ -69,7 +86,6 @@ function Home() {
         </div>
     </div>
 
-    {/* Modal */}
     {isModalOpen && (
       <div className="modal-overlay" onClick={closeModal}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
