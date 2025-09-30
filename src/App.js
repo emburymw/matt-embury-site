@@ -1,14 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Projects from './Projects';
 import Photography from './Photography';
 import Contact from './Contact';
+import { trackPageView } from './analytics';
+
+// Component to track page views
+function PageTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      <PageTracker />
       <div className="App">
         <nav className="main-nav">
           <ul>
