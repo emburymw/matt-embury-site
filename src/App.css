@@ -178,7 +178,7 @@
 
 .tech-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 25px;
   align-items: center;
   justify-items: center;

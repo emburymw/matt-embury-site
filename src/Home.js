@@ -164,12 +164,12 @@ function Home() {
         <div className='photography-contents'>
             <h1 id="photographyTitle">Photography</h1>
           <div className="photo-grid">
-            <img src={require('./images/Church.png')} alt="Photography 1" onClick={() => openModal(require('./images/Church.png'))} />
-            <img src={require('./images/FoxKit.png')} alt="Photography 2" onClick={() => openModal(require('./images/FoxKit.png'))} />
-            <img src={require('./images/Heeley.png')} alt="Photography 3" onClick={() => openModal(require('./images/Heeley.png'))} />
-            <img src={require('./images/Moose.jpg')} alt="Photography 4" onClick={() => openModal(require('./images/Moose.jpg'))} />
-            <img src={require('./images/Paget.jpg')} alt="Photography 5" onClick={() => openModal(require('./images/Paget.jpg'))} />
-            <img src={require('./images/Bison.png')} alt="Photography 6" onClick={() => openModal(require('./images/Bison.png'))} />
+            <img src={require('./images/Church.png')} alt="Photography 1" loading="lazy" onClick={() => openModal(require('./images/Church.png'))} />
+            <img src={require('./images/FoxKit.png')} alt="Photography 2" loading="lazy" onClick={() => openModal(require('./images/FoxKit.png'))} />
+            <img src={require('./images/Heeley.png')} alt="Photography 3" loading="lazy" onClick={() => openModal(require('./images/Heeley.png'))} />
+            <img src={require('./images/Moose.jpg')} alt="Photography 4" loading="lazy" onClick={() => openModal(require('./images/Moose.jpg'))} />
+            <img src={require('./images/Paget.jpg')} alt="Photography 5" loading="lazy" onClick={() => openModal(require('./images/Paget.jpg'))} />
+            <img src={require('./images/Bison.png')} alt="Photography 6" loading="lazy" onClick={() => openModal(require('./images/Bison.png'))} />
           </div>
           <button className="photography-btn" onClick={handlePhotographyClick}>View Full Gallery</button>
         </div>
