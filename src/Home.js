@@ -62,77 +62,77 @@ function Home() {
 
             <div className='tech-icons'>
               <div className='tech-item'>
-                <img title="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original-wordmark.svg" />
+                <img title="Angular" alt="Angular logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original-wordmark.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Angular</div>
               </div>
               <div className='tech-item'>
-                <img title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <img title="React" alt="React logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>React</div>
               </div>
               <div className='tech-item'>
-                <img title="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                <img title="Node.js" alt="Node.js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Node.js</div>
               </div>
               <div className='tech-item'>
-                <img title="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                <img title="MySQL" alt="MySQL logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>MySQL</div>
               </div>
               <div className='tech-item'>
-                <img title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                <img title="Java" alt="Java logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Java</div>
               </div>
               <div className='tech-item'>
-                <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                <img title="Python" alt="Python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Python</div>
               </div>
               <div className='tech-item'>
-                <img title="C++" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                <img title="C++" alt="C++ logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>C++</div>
               </div>
               <div className='tech-item'>
-                <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img title="HTML5" alt="HTML5 logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>HTML5</div>
               </div>
               <div className='tech-item'>
-                <img title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <img title="CSS3" alt="CSS3 logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>CSS3</div>
               </div>
               <div className='tech-item'>
-                <img title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img title="JavaScript" alt="JavaScript logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>JavaScript</div>
               </div>
               <div className='tech-item'>
-                <img title="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                <img title="TypeScript" alt="TypeScript logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>TypeScript</div>
               </div>
               <div className='tech-item'>
-                <img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                <img title="Git" alt="Git logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Git</div>
               </div>
               <div className='tech-item'>
-                <img title="Jira" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                <img title="Jira" alt="Jira logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Jira</div>
               </div>
               <div className='tech-item'>
-                <img title="SonarQube" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-plain-wordmark.svg" />
+                <img title="SonarQube" alt="SonarQube logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-plain-wordmark.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>SonarQube</div>
               </div>
               <div className='tech-item'>
-                <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
+                <img title="Jenkins" alt="Jenkins logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
                 <div className='tech-separator'></div>
                 <div className='tech-label'>Jenkins</div>
               </div>
@@ -154,9 +154,9 @@ function Home() {
                 <li>Updates the activity description with progress, checkpoints reached, and Tolkien-themed facts</li>
               </ul>
               <p>A web dashboard and database-backed backend track progress, while AI components enhance personalization with tailored commentary and summaries.</p>
+            </div>
               <p>Images coming soon...</p>
               <div className='loading-spinner' aria-label='Loading current project'></div>
-            </div>
             <button className="resume-btn" onClick={() => window.open('https://github.com/emburymw', '_blank', 'noopener,noreferrer')}>View my GitHub projects</button>
         </div>
     </div>
