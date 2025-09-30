@@ -45,7 +45,7 @@ function Home() {
       </div>
       <div id="about" className='about'>
             <div className='about-content'>
-              <img src={require('./images/Matt.jpg')} alt="Matt" />
+              <img src={require('./images/Matt.webp')} alt="Matt" />
               <div className="about-text">
                 <h1>About Me</h1>
                 <p>Software Developer by day, hobbyist photographer and mountain athlete by night. I'm a full stack developer with a passion for building web applications and mobile apps.
@@ -164,12 +164,12 @@ function Home() {
         <div className='photography-contents'>
             <h1 id="photographyTitle">Photography</h1>
           <div className="photo-grid">
-            <img src={require('./images/Church.png')} alt="Photography 1" loading="lazy" onClick={() => openModal(require('./images/Church.png'))} />
-            <img src={require('./images/FoxKit.png')} alt="Photography 2" loading="lazy" onClick={() => openModal(require('./images/FoxKit.png'))} />
-            <img src={require('./images/Heeley.png')} alt="Photography 3" loading="lazy" onClick={() => openModal(require('./images/Heeley.png'))} />
-            <img src={require('./images/Moose.jpg')} alt="Photography 4" loading="lazy" onClick={() => openModal(require('./images/Moose.jpg'))} />
-            <img src={require('./images/Paget.jpg')} alt="Photography 5" loading="lazy" onClick={() => openModal(require('./images/Paget.jpg'))} />
-            <img src={require('./images/Bison.png')} alt="Photography 6" loading="lazy" onClick={() => openModal(require('./images/Bison.png'))} />
+            <img src={require('./images/Church.webp')} alt="Photography 1" loading="lazy" onClick={() => openModal(require('./images/Church.webp'))} />
+            <img src={require('./images/FoxKit.webp')} alt="Photography 2" loading="lazy" onClick={() => openModal(require('./images/FoxKit.webp'))} />
+            <img src={require('./images/Heeley.webp')} alt="Photography 3" loading="lazy" onClick={() => openModal(require('./images/Heeley.webp'))} />
+            <img src={require('./images/Moose.webp')} alt="Photography 4" loading="lazy" onClick={() => openModal(require('./images/Moose.webp'))} />
+            <img src={require('./images/Paget.webp')} alt="Photography 5" loading="lazy" onClick={() => openModal(require('./images/Paget.webp'))} />
+            <img src={require('./images/Bison.webp')} alt="Photography 6" loading="lazy" onClick={() => openModal(require('./images/Bison.webp'))} />
           </div>
           <button className="photography-btn" onClick={handlePhotographyClick}>View Full Gallery</button>
         </div>

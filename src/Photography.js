@@ -8,12 +8,12 @@ function Photography() {
       
       <div className="photography-contents">
         <div className="photo-grid">
-            <img src={require('./images/Church.png')} alt="Photography 1" />
-            <img src={require('./images/FoxKit.png')} alt="Photography 2" />
-            <img src={require('./images/Heeley.png')} alt="Photography 3" />
-            <img src={require('./images/Moose.jpg')} alt="Photography 4" />
-            <img src={require('./images/Paget.jpg')} alt="Photography 5" />
-            <img src={require('./images/Bison.png')} alt="Photography 6" />
+            <img src={require('./images/Church.webp')} alt="Photography 1" />
+            <img src={require('./images/FoxKit.webp')} alt="Photography 2" />
+            <img src={require('./images/Heeley.webp')} alt="Photography 3" />
+            <img src={require('./images/Moose.webp')} alt="Photography 4" />
+            <img src={require('./images/Paget.webp')} alt="Photography 5" />
+            <img src={require('./images/Bison.webp')} alt="Photography 6" />
         </div>
 
       </div>
