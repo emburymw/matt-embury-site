@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import resumePdf from './documents/MattEmburyResume2025.pdf';
 
 function Home() {
   const navigate = useNavigate();
@@ -57,16 +58,111 @@ function Home() {
     </div>
     <div id="projects" className='projects'>
         <div className='tech'>
-            <h1>Experience</h1>
+            <h1>Technical Skills</h1>
+
+            <div className='tech-icons'>
+              <div className='tech-item'>
+                <img title="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original-wordmark.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Angular</div>
+              </div>
+              <div className='tech-item'>
+                <img title="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>React</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Node.js</div>
+              </div>
+              <div className='tech-item'>
+                <img title="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>MySQL</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Java</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Python</div>
+              </div>
+              <div className='tech-item'>
+                <img title="C++" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>C++</div>
+              </div>
+              <div className='tech-item'>
+                <img title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>HTML5</div>
+              </div>
+              <div className='tech-item'>
+                <img title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>CSS3</div>
+              </div>
+              <div className='tech-item'>
+                <img title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>JavaScript</div>
+              </div>
+              <div className='tech-item'>
+                <img title="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>TypeScript</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Git</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Jira" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Jira</div>
+              </div>
+              <div className='tech-item'>
+                <img title="SonarQube" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-plain-wordmark.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>SonarQube</div>
+              </div>
+              <div className='tech-item'>
+                <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
+                <div className='tech-separator'></div>
+                <div className='tech-label'>Jenkins</div>
+              </div>
+
+            </div>
+
+            <button className="resume-btn" onClick={() => window.open(resumePdf, '_blank', 'noopener,noreferrer')}>Download my resume</button>
 
         </div>
         <div className='projectsList'>
             <h1>Projects</h1>
+            <div className='current-project'>
+              <h2>Current Project</h2>
+              <p><b>The Lonely Mountain Project</b> is a gamified fitness challenge app that integrates with the Strava API. When a user opts in, it tracks cumulative distance from runs, hikes, or ski tours and maps progress against Bilbo’s journey in The Hobbit.</p>
+              <p>On each new Strava activity, the app:</p>
+              <ul>
+                <li>Calculates the user’s cumulative distance</li>
+                <li>Determine the next checkpoint along Bilbo’s route</li>
+                <li>Updates the activity description with progress, checkpoints reached, and Tolkien-themed facts</li>
+              </ul>
+              <p>A web dashboard and database-backed backend track progress, while AI components enhance personalization with tailored commentary and summaries.</p>
+              <p>Images coming soon...</p>
+              <div className='loading-spinner' aria-label='Loading current project'></div>
+            </div>
+            <button className="resume-btn" onClick={() => window.open('https://github.com/emburymw', '_blank', 'noopener,noreferrer')}>View my GitHub projects</button>
         </div>
     </div>
     <div id="photography" className='photography'>
         <div className='photography-contents'>
-            <h1>Photography</h1>
+            <h1 id="photographyTitle">Photography</h1>
           <div className="photo-grid">
             <img src={require('./images/Church.png')} alt="Photography 1" onClick={() => openModal(require('./images/Church.png'))} />
             <img src={require('./images/FoxKit.png')} alt="Photography 2" onClick={() => openModal(require('./images/FoxKit.png'))} />
@@ -79,10 +175,10 @@ function Home() {
         </div>
     </div>
     <div className='contact'>
-        <div className='contact-well'>
-            <h1>Get In Touch!</h1>
-            <p>You can e-mail me at:</p>
-            <p className="email-address">mwembury@gmail.com</p>
+        <div>
+            <p> © <b> Matt Embury </b> 2025 All Rights Reserved <br></br>
+            <a href="mailto:mwembury@gmail.com">mwembury@gmail.com</a> <br></br>
+            (613) 804-1369</p>
         </div>
     </div>
 
