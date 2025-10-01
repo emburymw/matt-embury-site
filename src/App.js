@@ -7,7 +7,6 @@ import Photography from './Photography';
 import Contact from './Contact';
 import { trackPageView } from './analytics';
 
-// Component to track page views
 function PageTracker() {
   const location = useLocation();
 

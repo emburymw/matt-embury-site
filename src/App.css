@@ -268,9 +268,9 @@
 }
 
 .photography-btn {
-  background-color: purple;
+  background-color: steelblue;
   color: white;
-  border: none;
+  border: 1px solid steelblue 0.9;
   padding: 15px 30px;
   font-size: 1.2rem;
   font-weight: 300;
@@ -281,7 +281,7 @@
 }
 
 .photography-btn:hover {
-  background-color: rgb(148, 22, 148);
+  background-color: rgb(96, 141, 179, 0.7);
 }
 
 .resume-btn {
@@ -315,9 +315,24 @@ a {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  padding: 0px 0px;
+  padding: 10px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.contactText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+}
+
+.hyperlinks {
+  display: flex; 
 }
 
 .main-nav {
@@ -489,6 +504,9 @@ a {
 @media (max-width: 1024px) {
   .home {
     padding: 0 40px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
   }
   .home-title {
     font-size: 8rem;
@@ -527,6 +545,9 @@ a {
     justify-content: center;
     padding: 20px;
     text-align: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
   }
   .home-title {
     font-size: 4rem;
@@ -573,6 +594,11 @@ a {
 }
 
 @media (max-width: 480px) {
+  .home {
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
   .home-title {
     font-size: 3rem;
   }
