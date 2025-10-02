@@ -45,9 +45,9 @@ function Home() {
       </div>
       <div id="about" className='about'>
         <div className='about-content'>
-          <img src={require('./images/Matt.webp')} alt="Matt" />
+          <img src={require('./images/Matt.webp')} alt="Matt Embury - Software Developer and Photographer" />
           <div className="about-text">
-            <h1>About Me</h1>
+            <h2>About Me</h2>
             <p>Software Developer by day, hobbyist photographer and mountain athlete by night. I'm a full stack developer with a passion for building web applications and mobile apps.
               I've created this site to showcase some of my recent projects as I try to expand my skills and learn new technologies. You can also check out
               my <a href='https://github.com/emburymw'>Github portfoilio</a> to see how I've developed my projects directly! </p>
@@ -58,7 +58,7 @@ function Home() {
       </div>
       <div id="projects" className='projects'>
         <div className='tech'>
-          <h1>Technical Skills</h1>
+          <h2>Technical Skills</h2>
 
           <div className='tech-icons'>
             <div className='tech-item'>
@@ -143,9 +143,9 @@ function Home() {
 
         </div>
         <div className='projectsList'>
-          <h1>Projects</h1>
+          <h2>Projects</h2>
           <div className='current-project'>
-            <h2>Current Project</h2>
+            <h3>Current Project</h3>
             <p><b>The Lonely Mountain Project</b> is a gamified fitness challenge app that integrates with the Strava API. When a user opts in, it tracks cumulative distance from runs, hikes, or ski tours and maps progress against Bilbo’s journey in The Hobbit.</p>
             <p>On each new Strava activity, the app:</p>
             <ul>
@@ -162,14 +162,14 @@ function Home() {
       </div>
       <div id="photography" className='photography'>
         <div className='photography-contents'>
-          <h1 id="photographyTitle">Photography</h1>
+          <h2 id="photographyTitle">Photography</h2>
           <div className="photo-grid">
-            <img src={require('./images/Church.webp')} alt="Photography 1" loading="lazy" onClick={() => openModal(require('./images/Church.webp'))} />
-            <img src={require('./images/FoxKit.webp')} alt="Photography 2" loading="lazy" onClick={() => openModal(require('./images/FoxKit.webp'))} />
-            <img src={require('./images/Heeley.webp')} alt="Photography 3" loading="lazy" onClick={() => openModal(require('./images/Heeley.webp'))} />
-            <img src={require('./images/Moose.webp')} alt="Photography 4" loading="lazy" onClick={() => openModal(require('./images/Moose.webp'))} />
-            <img src={require('./images/Paget.webp')} alt="Photography 5" loading="lazy" onClick={() => openModal(require('./images/Paget.webp'))} />
-            <img src={require('./images/Bison.webp')} alt="Photography 6" loading="lazy" onClick={() => openModal(require('./images/Bison.webp'))} />
+            <img src={require('./images/Church.webp')} alt="Church architecture photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/Church.webp'))} />
+            <img src={require('./images/FoxKit.webp')} alt="Fox kit wildlife photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/FoxKit.webp'))} />
+            <img src={require('./images/Heeley.webp')} alt="Mountain landscape photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/Heeley.webp'))} />
+            <img src={require('./images/Moose.webp')} alt="Moose wildlife photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/Moose.webp'))} />
+            <img src={require('./images/Paget.webp')} alt="Mountain photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/Paget.webp'))} />
+            <img src={require('./images/Bison.webp')} alt="Bison wildlife photography by Matt Embury" loading="lazy" onClick={() => openModal(require('./images/Bison.webp'))} />
           </div>
           <button className="photography-btn" onClick={handlePhotographyClick}>View Full Gallery</button>
         </div>
