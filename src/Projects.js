@@ -4,7 +4,7 @@ function Projects() {
   return (
     <div className="projects-page">
       <div className="projects-hero">
-        <h1 className="projects-title">My Projects</h1>
+        <h1 className="projects-title">Personal Projects</h1>
         <p className="projects-subtitle">Building solutions that combine technology with adventure</p>
       </div>
       

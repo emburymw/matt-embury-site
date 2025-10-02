@@ -7,6 +7,24 @@ import Photography from './Photography';
 import Contact from './Contact';
 import { trackPageView } from './analytics';
 
+
+const preloadImages = () => {
+  const criticalImages = [
+    './images/IcelandTV.webp',
+    './images/TentRidge.webp',
+    './images/ThreeSisters.webp',
+    './images/LandMann.webp'
+  ];
+  
+  criticalImages.forEach(src => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = src;
+    document.head.appendChild(link);
+  });
+};
+
 function PageTracker() {
   const location = useLocation();
 
@@ -47,6 +65,10 @@ function AppContent() {
 }
 
 function App() {
+  useEffect(() => {
+    preloadImages();
+  }, []);
+
   return (
     <Router>
       <PageTracker />

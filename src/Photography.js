@@ -68,8 +68,10 @@ function Photography() {
               <img 
                 src={image.src} 
                 alt={image.alt} 
-                loading="lazy"
+                loading={index < 6 ? "eager" : "lazy"}
                 className="photo-image"
+                decoding="async"
+                fetchpriority={index < 3 ? "high" : "auto"}
               />
               <div className="photo-overlay">
                 <h3 className="photo-title">{image.title}</h3>
