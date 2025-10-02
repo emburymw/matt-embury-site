@@ -17,26 +17,40 @@ function PageTracker() {
   return null;
 }
 
+function AppContent() {
+  const location = useLocation();
+  
+  // Get the current page name from the pathname
+  const getPageName = (pathname) => {
+    if (pathname === '/') return 'home';
+    return pathname.substring(1); // Remove the leading slash
+  };
+
+  return (
+    <div className="App" data-page={getPageName(location.pathname)}>
+      <nav className="main-nav">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/photography">Photography</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/photography" element={<Photography />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
       <PageTracker />
-      <div className="App">
-        <nav className="main-nav">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/photography">Photography</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/photography" element={<Photography />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <AppContent />
     </Router>
   );
 }
