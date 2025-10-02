@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import resumePdf from './documents/MattEmburyResume2025.pdf';
 
 function Home() {
@@ -213,10 +213,10 @@ function Home() {
           </div>
           <div className="contact-navigation">
             <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/projects">Projects</a>
-              <a href="/photography">Photography</a>
-              <a href="/contact">Contact</a>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/photography">Photography</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
           <div className="contact-footer">

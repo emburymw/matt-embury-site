@@ -1635,9 +1635,24 @@ a {
   }
 
   .contactText {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
     text-align: center;
+  }
+
+  .contact-info {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .contact-details {
@@ -1650,16 +1665,23 @@ a {
     flex-direction: column;
     gap: 5px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-section {
-    align-items: center;
-    padding: 6px 0;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    min-width: 120px;
   }
 
   .hyperlinks {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
+    flex-direction: column;
   }
 
   .contact-navigation {
@@ -1848,6 +1870,22 @@ a {
 
   .contact-content {
     padding: 0 15px;
+  }
+
+  /* Very small mobile screens - stack vertically if needed */
+  .contactText {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social-section {
+    align-items: center;
+    min-width: auto;
+  }
+
+  .hyperlinks {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .contact-card, .social-links {
