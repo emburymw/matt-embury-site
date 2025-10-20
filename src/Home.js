@@ -48,11 +48,11 @@ function Home() {
           <img src={require('./images/Matt.webp')} alt="Matt Embury - Software Developer and Photographer" />
           <div className="about-text">
             <h2>About Me</h2>
-            <p>Software Developer by day, hobbyist photographer and mountain athlete by night. I'm a full stack developer with a passion for building web applications and mobile apps.
-              I've created this site to showcase some of my recent projects as I try to expand my skills and learn new technologies. You can also check out
-              my <a href='https://github.com/emburymw'>Github portfoilio</a> to see how I've developed my projects directly! </p>
+            <p>Matt Embury is a Software Developer by day, hobbyist photographer and mountain athlete by night. Matt Embury is a full stack developer with a passion for building web applications and mobile apps.
+              Matt Embury has created this site to showcase recent projects while expanding skills and learning new technologies. You can also check out
+              Matt Embury's <a href='https://github.com/emburymw'>Github portfolio</a> to see how Matt Embury has developed projects directly! </p>
 
-            <p>On weekends you'll find me in the mountains trail running, backcountry skiing, or rock climbing. Probably with camera in hand.</p>
+            <p>On weekends you'll find Matt Embury in the mountains trail running, backcountry skiing, or rock climbing. Probably with camera in hand.</p>
           </div>
         </div>
       </div>
@@ -174,6 +174,16 @@ function Home() {
           <button className="photography-btn" onClick={handlePhotographyClick}>View Full Gallery</button>
         </div>
       </div>
+      {/* SEO Content - Hidden but accessible to search engines */}
+      <div style={{ position: 'absolute', left: '-9999px', top: '-9999px' }}>
+        <h1>Matt Embury Portfolio</h1>
+        <p>Matt Embury is a professional software developer and photographer based in Canmore, Alberta. Matt Embury specializes in React, Node.js, and full-stack web development. Matt Embury's portfolio showcases software development projects and photography work. Contact Matt Embury for software development services and photography projects.</p>
+        <h2>Matt Embury - Software Developer</h2>
+        <p>Matt Embury offers software development services including React applications, Node.js backends, and full-stack web solutions. Matt Embury is available for freelance projects and consulting work.</p>
+        <h2>Matt Embury - Photographer</h2>
+        <p>Matt Embury is also a skilled photographer specializing in mountain and wildlife photography. Matt Embury's photography work captures the beauty of the Canadian Rockies and wildlife.</p>
+      </div>
+
       <div className='contact'>
         <div className="contact-container">
           <div className="contact-header">

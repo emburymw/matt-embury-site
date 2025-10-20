@@ -1,4 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Allow: /
 Sitemap: https://mattembury.ca/sitemap.xml
+
+# Matt Embury Portfolio - Software Developer & Photographer
+# Contact: mwembury@gmail.com
+# Location: Canmore, Alberta, Canada
