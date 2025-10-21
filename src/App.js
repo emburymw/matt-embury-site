@@ -5,15 +5,17 @@ import Home from './Home';
 import Projects from './Projects';
 import Photography from './Photography';
 import Contact from './Contact';
-import { trackPageView } from './analytics';
+import { initializeGA, trackPageView } from './analytics';
 
 
 const preloadImages = () => {
   const criticalImages = [
-    './images/IcelandTV.webp',
-    './images/TentRidge.webp',
-    './images/ThreeSisters.webp',
-    './images/LandMann.webp'
+    './images/Matt.webp', 
+    './images/IcelandTV.webp', 
+    './images/TentRidge.webp', 
+    './images/ThreeSisters.webp', 
+    './images/Church.webp', 
+    './images/FoxKit.webp'
   ];
   
   criticalImages.forEach(src => {
@@ -21,6 +23,7 @@ const preloadImages = () => {
     link.rel = 'preload';
     link.as = 'image';
     link.href = src;
+    link.crossOrigin = 'anonymous';
     document.head.appendChild(link);
   });
 };
@@ -67,6 +70,7 @@ function AppContent() {
 function App() {
   useEffect(() => {
     preloadImages();
+    initializeGA();
   }, []);
 
   return (
